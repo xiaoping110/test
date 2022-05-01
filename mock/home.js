@@ -36,6 +36,12 @@ const getMockList = (request, response) => {
   response.json(result)
 }
 
+//获取商品列表
+const getProductList=(request,response)=>{
+  const result={}
+  response.json(result)
+}
+
 // 注册首页相关路由 
 const homeMockApi = app => {
   app.post('/mock/operation/advertising/getAdvertisingList', getAdveeristin)

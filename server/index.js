@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 
 app.use('/api', userRouter)
 
-app.use((err) => {
+app.use((err, res) => {
   res.send(`Error:`, err.message)
 })
 
